@@ -1,0 +1,6 @@
+share size = risk / size of your stop
+
+risk: 100€
+size of stop: 0,50€ -> entry(5) - stop(4,5)
+
+100/0,5 = 200 shares

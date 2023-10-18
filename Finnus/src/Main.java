@@ -1,0 +1,48 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.file.Path;
+
+import javax.swing.JFileChooser;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Geben Sie das Wort ein: ");
+		try
+		{
+			String wort = reader.readLine();
+			JFileChooser chooser = new JFileChooser();
+			chooser.showOpenDialog(null);
+			String path = chooser.getSelectedFile().toString();
+			int count = 0;
+			try {
+				BufferedReader in = new BufferedReader(new FileReader(path));
+				String zeile;
+				while((zeile = in.readLine()) != null)
+				{
+					zeile.toLowerCase();
+					if(zeile.contains(wort))
+					{
+						count++;
+					}
+				}
+				System.out.println(count);
+			}
+			catch (IOException ex)
+			{
+				System.out.println(ex.getMessage());
+			}
+			
+		} catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

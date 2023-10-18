@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uebungpaket.HelloController">
+   <children>
+      <Label fx:id="lblHeight" layoutX="73.0" layoutY="96.0" />
+      <Label fx:id="lblWidth" layoutX="73.0" layoutY="166.0" />
+      <Label fx:id="lblDepth" layoutX="73.0" layoutY="233.0" />
+      <Slider fx:id="slHeight" layoutX="236.0" layoutY="97.0" majorTickUnit="10.0" max="60.0" min="20.0" prefHeight="14.0" prefWidth="204.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="slWidth" layoutX="236.0" layoutY="167.0" majorTickUnit="10.0" max="60.0" min="20.0" prefHeight="14.0" prefWidth="204.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="slDepth" layoutX="236.0" layoutY="234.0" majorTickUnit="10.0" max="60.0" min="20.0" prefHeight="14.0" prefWidth="204.0" showTickLabels="true" showTickMarks="true" />
+      <TextField fx:id="tfHeight" layoutX="122.0" layoutY="92.0" prefHeight="25.0" prefWidth="92.0" />
+      <TextField fx:id="tfWidth" layoutX="122.0" layoutY="162.0" prefHeight="25.0" prefWidth="92.0" />
+      <TextField fx:id="tfDepth" layoutX="122.0" layoutY="229.0" prefHeight="25.0" prefWidth="92.0" />
+      <Button fx:id="btnL" layoutX="488.0" layoutY="188.0" mnemonicParsing="false" onAction="#onBtnLClick" prefHeight="25.0" prefWidth="72.0" text="Paket L" />
+      <Button fx:id="btnM" layoutX="488.0" layoutY="137.0" mnemonicParsing="false" onAction="#onBtnMClick" prefHeight="25.0" prefWidth="72.0" text="Paket M" />
+      <Button fx:id="btnS" layoutX="488.0" layoutY="85.0" mnemonicParsing="false" onAction="#onBtnSClick" prefHeight="25.0" prefWidth="72.0" text="Paket S" />
+      <Button fx:id="btnXL" layoutX="488.0" layoutY="236.0" mnemonicParsing="false" onAction="#onBtnXLClick" prefHeight="25.0" prefWidth="72.0" text="Paket XL" />
+      <Label fx:id="lblResult" layoutX="154.0" layoutY="309.0" />
+      <TextField fx:id="tfResult" layoutX="236.0" layoutY="305.0" prefHeight="25.0" prefWidth="204.0" />
+      <ComboBox fx:id="languages" layoutX="436.0" layoutY="14.0" onAction="#auswahl" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank.KontoController">
+   <children>
+      <Label fx:id="lblView" layoutX="286.0" layoutY="55.0" />
+      <Label fx:id="lblAktKonto" layoutX="145.0" layoutY="127.0" />
+      <Label fx:id="lblBetrag" layoutX="426.0" layoutY="127.0" />
+      <Label fx:id="lblGuthaben" layoutX="145.0" layoutY="174.0" />
+      <Label fx:id="lblZinsen" layoutX="426.0" layoutY="174.0" />
+      <Button fx:id="btnEinzahlung" layoutX="133.0" layoutY="267.0" mnemonicParsing="false" onAction="#onEinClick" />
+      <Button fx:id="btnAuszahlung" layoutX="414.0" layoutY="267.0" mnemonicParsing="false" onAction="#onAusClick" />
+      <TextField fx:id="tfEin" layoutX="85.0" layoutY="306.0" />
+      <TextField fx:id="tfAus" layoutX="366.0" layoutY="306.0" />
+   </children>
+</AnchorPane>

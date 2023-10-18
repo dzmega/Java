@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paketshop.HelloController">
+   <children>
+      <Label fx:id="lblHöhe" layoutX="53.0" layoutY="94.0" />
+      <Label fx:id="lblBreite" layoutX="53.0" layoutY="156.0" />
+      <Label fx:id="lblTiefe" layoutX="53.0" layoutY="220.0" />
+      <TextField fx:id="txtHöhe" layoutX="108.0" layoutY="90.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="txtBreite" layoutX="108.0" layoutY="152.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="txtTiefe" layoutX="108.0" layoutY="216.0" prefHeight="25.0" prefWidth="85.0" />
+      <Slider fx:id="sliderHöhe" layoutX="208.0" layoutY="96.0" majorTickUnit="10.0" max="60.0" min="20.0" prefHeight="14.0" prefWidth="266.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="sliderBreite" layoutX="208.0" layoutY="158.0" majorTickUnit="10.0" max="60.0" min="20.0" prefHeight="14.0" prefWidth="266.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="sliderTiefe" layoutX="208.0" layoutY="222.0" majorTickUnit="10.0" max="60.0" min="20.0" prefHeight="14.0" prefWidth="266.0" showTickLabels="true" showTickMarks="true" />
+      <Button fx:id="btnM" layoutX="505.0" layoutY="136.0" mnemonicParsing="false" onAction="#onPaketM" prefHeight="25.0" prefWidth="72.0" text="Paket M" />
+      <Button fx:id="btnL" layoutX="505.0" layoutY="188.0" mnemonicParsing="false" onAction="#onPaketL" prefHeight="25.0" prefWidth="72.0" text="Paket L" />
+      <Button fx:id="btnXL" layoutX="505.0" layoutY="236.0" mnemonicParsing="false" onAction="#onPaketXL" prefHeight="25.0" prefWidth="72.0" text="Paket XL" />
+      <Button fx:id="btnS" layoutX="505.0" layoutY="84.0" mnemonicParsing="false" onAction="#onPaketS" prefHeight="25.0" prefWidth="72.0" text="Paket S" />
+      <Label fx:id="lblErgebnis" layoutX="151.0" layoutY="303.0" />
+      <TextField fx:id="txtErgebnis" layoutX="208.0" layoutY="299.0" prefHeight="25.0" prefWidth="266.0" />
+      <ComboBox fx:id="languages" layoutX="225.0" layoutY="26.0" onAction="#auswahl" prefWidth="150.0" />
+   </children>
+</AnchorPane>
